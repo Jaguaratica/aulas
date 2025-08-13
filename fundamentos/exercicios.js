@@ -4,7 +4,7 @@
 let total = parseFloat(prompt("Valor total: R$"));
 let pago = parseFloat(prompt("Valor pagamento: R$"));
 let troco = pago - total;
-            
+
 if (pago >= total) {
     console.log("Troco: R$" + (troco));
 } else {
