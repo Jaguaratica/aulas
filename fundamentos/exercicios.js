@@ -10,3 +10,6 @@ if (pago >= total) {
 } else {
     console.log("Valor pago é insuficiente!");
 }
+
+
+// Correcao exercicio
