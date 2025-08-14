@@ -4,7 +4,6 @@
 // Guarde o nome em uma variável.
 // Use alert para mostrar a mensagem: "Olá, [nome do usuário]! Bem-vindo(a)!".
 
-/*
 const nome = prompt("Seu nome: "); // Guardando o nome em variável
 console.log(`Olá, ${nome}! Bem-vindo(a)!`); // Mensagem de boas vindas
 
@@ -63,7 +62,7 @@ if (idade > 18) {
 // "Reprovado" (se a média for menor que 5).
 // "Recuperação" (se a média for entre 5 e 7).
 // "Aprovado" (se a média for maior ou igual a 7).
-*/
+
 // Guardando notas em variáveis
 const nota1 = parseFloat(prompt("Escreva sua 1° nota:"));
 const nota2 = parseFloat(prompt("Escreva sua 2° nota:"));
