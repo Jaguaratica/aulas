@@ -72,7 +72,7 @@ const media = (nota1 + nota2 + nota3) / 3;
 // Informações no console
 if (media < 5) {
     console.log("Você está reprovado.");
-} if (media > 7) {
+} else if (media > 7) {
     console.log("Você está aprovado.");
 } else {
     console.log("Você está de recuperação.");

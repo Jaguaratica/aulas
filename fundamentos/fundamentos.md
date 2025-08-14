@@ -9,3 +9,5 @@ Tipos de Dados: Os 8 tipos primitivos (String, Number, Boolean, null, undefined,
 Operadores: Aritméticos (+, *), de Atribuição (=), de Comparação (===, >).
 
 Manipulação de Strings: Concatenar, encontrar o comprimento (.length), pegar caracteres específicos.
+
+Arrays: As "prateleiras" para guardar listas de dados. Acessar por índice
