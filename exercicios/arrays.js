@@ -60,19 +60,20 @@ console.log("Lista final de compras:", listaDeCompras);
 
 playlist = ["Bohemian Rhapsody", "Hotel California", "Stairway to Heaven", "Imagine", "Like a Rolling Stone", "Smells Like Teen Spirit"]
 
+/*
 let indiceInicial = playlist.indexOf("Stairway to Heaven");
 let listaStairway = [];
 
 for (let indice = indiceInicial;  indice < playlist.length; indice++){
-//    listaStairway.push(playlist[2, 5]);
-//    console.log(playlist[indice])
-    console.log(playlist[0]);
-    console.log(playlist[1]);
+    listaStairway.push(playlist[indice]);
 }
 
+console.log(listaStairway)
+*/
 
-
-const novaLista = playlist.slice(2)
+let indiceInicial = playlist.indexOf("Stairway to Heaven");
+let listaStairway = playlist.slice(indiceInicial);
+console.log(listaStairway);
 
 // Desafio Final: Organizando uma Fila de Atendimento
 // Este desafio combina vários conceitos.
