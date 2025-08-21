@@ -28,6 +28,7 @@ console.log(planetas[8])
 // Faltou um item! Adicione "Leite" ao final da sua lista de compras.
 // Depois de todas as alterações, exiba a lista de compras final.
 
+/*
 // -----------> Encontrando o indice de Azeite
 listaDeCompras = ["Arroz", "Feijão", "Macarrão", "Azeite", "Sal"]
 
@@ -47,6 +48,7 @@ if (indiceMacarrao != -1) {
 listaDeCompras.push("Leite");
 
 console.log("Lista final de compras:", listaDeCompras);
+*/
 
 // Exercício 3: Playlist de Músicas
 // Imagine que você tem uma playlist de músicas para uma viagem.
@@ -55,6 +57,22 @@ console.log("Lista final de compras:", listaDeCompras);
 // A viagem começou e você quer ouvir a partir de "Stairway to Heaven" até o final. Crie uma nova lista chamada viagemComecou que contenha essa parte da playlist.
 // Você só tem tempo para ouvir as músicas que estão entre "Hotel California" e "Like a Rolling Stone" (incluindo as duas). Crie uma nova lista chamada trechoCurto com essa seleção.
 // Crie uma terceira lista chamada asTresPrimeiras contendo apenas as 3 primeiras músicas da playlist original.
+
+playlist = ["Bohemian Rhapsody", "Hotel California", "Stairway to Heaven", "Imagine", "Like a Rolling Stone", "Smells Like Teen Spirit"]
+
+let indiceInicial = playlist.indexOf("Stairway to Heaven");
+let listaStairway = [];
+
+for (let indice = indiceInicial;  indice < playlist.length; indice++){
+//    listaStairway.push(playlist[2, 5]);
+//    console.log(playlist[indice])
+    console.log(playlist[0]);
+    console.log(playlist[1]);
+}
+
+
+
+const novaLista = playlist.slice(2)
 
 // Desafio Final: Organizando uma Fila de Atendimento
 // Este desafio combina vários conceitos.
