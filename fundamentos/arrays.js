@@ -1,4 +1,4 @@
-// Arrray/ Vetor
+// Array/ Vetor
 frutas = ["Maçã", "Banana", "Laranja", "Uva", "Morango"]
 frutaInicial = 'Banana'
 // indexOf -> encontrar o indice de um determinado elemento.
