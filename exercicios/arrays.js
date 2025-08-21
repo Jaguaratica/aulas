@@ -85,4 +85,62 @@ console.log(listaStairway);
 // O atendimento foi rápido e os dois primeiros clientes ("Cliente A" e "Cliente B") foram atendidos. Remova os dois primeiros da fila
 // Exiba a fila final para saber quem são os próximos a serem atendidos.
 
+// Nível 1: Acesso e Índices
+// Exercício 1: Gerenciando Etapas de um Foguete
+// Você está controlando a sequência de lançamento de um foguete. As etapas estão em um array:
 
+// etapasLançamento = ["Verificação de sistemas", "Ignição do motor principal", "Lançamento", "Separação do foguete auxiliar", "Entrada em órbita"]
+
+// Tarefas:
+
+// Qual é a primeira etapa do lançamento (a que está no índice 0)? Exiba-a.
+
+// A etapa de "Lançamento" é crucial. Qual é o índice dela?
+
+// Exiba a última etapa da sequência usando o comprimento do array para encontrá-la (Dica: o índice do último item é sempre tamanho - 1).
+
+// Nível 2: Busca e Modificação
+// Exercício 2: Controle de Estoque
+// Você tem um array que representa as prateleiras de um pequeno estoque.
+
+// estoque = ["Parafusos", "Porcas", "Arruelas", "Pregos", "Buchas"]
+
+// Tarefas:
+
+// Um cliente comprou todas as "Arruelas". Para não deixar a prateleira vazia, você quer colocar "Brocas" no lugar. Modifique o array para que "Brocas" substitua "Arruelas".
+
+// Você percebeu que "Pregos" está acabando e precisa ser removido da lista de itens disponíveis. Remova "Pregos" do array. (Dica: primeiro encontre o índice, depois use um método para remover).
+
+// Chegou uma nova mercadoria: "Fita Isolante". Adicione-a ao final do seu estoque.
+
+// Mostre o array estoque final.
+
+// Nível 3: Fatiamento (Slicing)
+// Exercício 3: Análise de Temperaturas
+// Um sensor registrou as temperaturas (em Celsius) ao longo de uma semana e as armazenou em um array.
+
+// temperaturasSemana = [22, 24, 25, 27, 28, 26, 23]
+// // (índice 0 = Domingo, 1 = Segunda, ..., 6 = Sábado)
+
+// Tarefas:
+
+// O período de trabalho vai de Segunda a Sexta. Crie um novo array chamado diasUteis contendo apenas as temperaturas desses dias.
+
+// O fim de semana (Sábado e Domingo) teve temperaturas mais amenas. Crie um array chamado fimDeSemana que contenha a temperatura de Domingo e a de Sábado. (Atenção: eles não estão juntos no array!).
+
+// O pico de calor ocorreu entre Terça e Quinta. Crie um array picoCalor com as temperaturas registradas nesses três dias.
+
+// Desafio Final: Gerenciando uma Corrida
+// Você está monitorando os corredores em uma maratona.
+
+// corredores = ["Ana", "Bruno", "Carlos", "Diana", "Eduardo", "Fernanda"]
+
+// Tarefas:
+
+// No meio da corrida, Carlos se sentiu mal e precisou abandonar. Remova-o da lista.
+
+// Logo em seguida, os três primeiros colocados (Ana, Bruno e Diana) se destacaram do resto do grupo. Crie um novo array chamado pelotaoDaFrente apenas com eles.
+
+// Eduardo conseguiu um fôlego extra e ultrapassou Diana. Na lista original de corredores (já sem o Carlos), troque as posições de "Eduardo" e "Diana".
+
+// Mostre a lista final de corredores na sua nova ordem e também o pelotaoDaFrente.
