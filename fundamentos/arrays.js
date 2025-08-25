@@ -34,7 +34,6 @@ for (let indice = indiceFrutaInicial; indice<=indiceFrutaFinal; indice++){
 // }
 
 
-
 //  1. O Array é uma "Prateleira" Ordenada
 //  Conceito: É uma estrutura que guarda uma coleção de dados em uma ordem específica. A ordem em que você adiciona os itens é a ordem em que eles ficam armazenados.
 //  Ênfase: Pense nele como uma estante onde cada item tem seu lugar definido, um após o outro. Não é um saco de coisas jogadas aleatoriamente.
@@ -62,6 +61,9 @@ for (let indice = indiceFrutaInicial; indice<=indiceFrutaFinal; indice++){
 //  Ênfase:
 //      Alterar: Para trocar um item, você acessa a prateleira pelo índice e coloca algo novo lá: `array[2] = "Abacaxi"`.
 //      Adicionar/Remover: Você pode adicionar itens no final (`.push()` ou `.append()`) ou remover de posições específicas, o que "reorganiza" os itens restantes.
+
+// append -> manipula arquivos html
+// push -> nativo de js
 
 //  7. A Ordem dos Fatores Altera o Produto
 //  Conceito: A ordem dos seus dados no array define como o fatiamento e o acesso funcionam.
