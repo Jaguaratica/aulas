@@ -149,14 +149,25 @@ console.log(estoque);
 // Nível 3: Fatiamento (Slicing)
 // Exercício 3: Análise de Temperaturas
 // Um sensor registrou as temperaturas (em Celsius) ao longo de uma semana e as armazenou em um array.
-
 // temperaturasSemana = [22, 24, 25, 27, 28, 26, 23]
 // // (índice 0 = Domingo, 1 = Segunda, ..., 6 = Sábado)
-
 // Tarefas:
 // O período de trabalho vai de Segunda a Sexta. Crie um novo array chamado diasUteis contendo apenas as temperaturas desses dias.
 // O fim de semana (Sábado e Domingo) teve temperaturas mais amenas. Crie um array chamado fimDeSemana que contenha a temperatura de Domingo e a de Sábado. (Atenção: eles não estão juntos no array!).
 // O pico de calor ocorreu entre Terça e Quinta. Crie um array picoCalor com as temperaturas registradas nesses três dias.
+
+/*
+temperaturasSemana = [22, 24, 25, 27, 28, 26, 23];
+
+let diasUteis = temperaturasSemana.slice(1,6); // SLICE (ultimo é <)
+
+console.log(diasUteis);
+
+let fimDeSemana = [temperaturasSemana[0], temperaturasSemana[6]];
+
+let picoCalor = temperaturasSemana.slice(2,5);
+*/
+
 // Desafio Final: Gerenciando uma Corrida
 // Você está monitorando os corredores em uma maratona.
 // corredores = ["Ana", "Bruno", "Carlos", "Diana", "Eduardo", "Fernanda"]
@@ -165,3 +176,21 @@ console.log(estoque);
 // Logo em seguida, os três primeiros colocados (Ana, Bruno e Diana) se destacaram do resto do grupo. Crie um novo array chamado pelotaoDaFrente apenas com eles.
 // Eduardo conseguiu um fôlego extra e ultrapassou Diana. Na lista original de corredores (já sem o Carlos), troque as posições de "Eduardo" e "Diana".
 // Mostre a lista final de corredores na sua nova ordem e também o pelotaoDaFrente.
+
+corredores = ["Ana", "Bruno", "Carlos", "Diana", "Eduardo", "Fernanda"];
+
+let indiceCarlos = corredores.indexOf("Carlos");
+corredores.splice(indiceCarlos, 1);
+
+let pelotaoDaFrente = corredores.slice(0,3);
+
+let indiceEduardo = corredores.indexOf("Eduardo");
+let indiceDiana = corredores.indexOf("Diana");
+
+if (indiceEduardo != -1) {
+  corredores[indiceEduardo] = "Diana";
+  corredores[indiceDiana] = "Eduardo";
+}
+
+console.log(corredores);
+console.log(pelotaoDaFrente);
