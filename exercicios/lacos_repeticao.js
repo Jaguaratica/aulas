@@ -37,6 +37,7 @@ destinos.forEach(function(destino){
 // 5.  No final, exiba o array `dobros` completo.
 // ---------------------------------------------------------------------
 
+/*
 numeros = [5, 10, 15, 20, 25];
 
 dobros = [];
@@ -46,6 +47,7 @@ numeros.forEach(function(numDobro){
 });
 
 console.log(dobros);
+*/
 
 // ---------------------------------------------------------------------
 // Nível 3: Avançado (Loop com Condição)
@@ -61,6 +63,7 @@ console.log(dobros);
 // 5.  Ao final, exiba a lista `emailsValidos`.
 // ---------------------------------------------------------------------
 
+/*
 emails = ["usuario1@gmail.com", "contato@hotmail.com", "dev@gmail.com", "empresa@yahoo.com", "aluno@gmail.com"];
 
 emailsValidos = [];
@@ -72,6 +75,7 @@ emails.forEach(function(email){
 });
 
 console.log(emailsValidos);
+*/
 
 // ---------------------------------------------------------------------
 // Desafio Final: Processando Dados Complexos
@@ -94,9 +98,6 @@ console.log(emailsValidos);
 // 4.  Após o laço terminar, exiba uma mensagem com o valor final, por exemplo: "O valor total da sua compra é R$ XX.XX".
 // ---------------------------------------------------------------------
 
-/*
 let total = 0
 
 const carrinho = [{ nome: "Maçã", preco: 3.50 },{ nome: "Leite", preco: 5.80 },{ nome: "Pão", preco: 7.20 },{ nome: "Chocolate", preco: 6.00 }]
-*/
-
