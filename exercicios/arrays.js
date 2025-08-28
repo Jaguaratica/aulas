@@ -177,6 +177,7 @@ let picoCalor = temperaturasSemana.slice(2,5);
 // Eduardo conseguiu um fôlego extra e ultrapassou Diana. Na lista original de corredores (já sem o Carlos), troque as posições de "Eduardo" e "Diana".
 // Mostre a lista final de corredores na sua nova ordem e também o pelotaoDaFrente.
 
+/*
 corredores = ["Ana", "Bruno", "Carlos", "Diana", "Eduardo", "Fernanda"];
 
 let indiceCarlos = corredores.indexOf("Carlos");
@@ -194,3 +195,4 @@ if (indiceEduardo != -1) {
 
 console.log(corredores);
 console.log(pelotaoDaFrente);
+*/
