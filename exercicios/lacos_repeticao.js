@@ -94,9 +94,111 @@ console.log(emailsValidos);
 // 4.  Após o laço terminar, exiba uma mensagem com o valor final, por exemplo: "O valor total da sua compra é R$ XX.XX".
 // ---------------------------------------------------------------------
 
-/*
-let total = 0
+
+let total = '';
+console.log(total, 'total');
+
+console.log(total + 'ola mundo', 'total somando')
 
 const carrinho = [{ nome: "Maçã", preco: 3.50 },{ nome: "Leite", preco: 5.80 },{ nome: "Pão", preco: 7.20 },{ nome: "Chocolate", preco: 6.00 }]
-*/
+
+const items = [ "Maçã", "Leite", "Pão", "Chocolate"]
+const precoItems = [3.50, 5.80, 7.20, 6.00]
+
+
+const item = {
+    nome: "Maçã",
+    preco: 3.50
+}
+
+const item1 = {
+    nome: "Leite",
+    preco: 5.80
+}
+
+const item2 = {
+    nome: "Pão",
+    preco: 7.20
+}
+
+const item3 = {
+    nome: "Chocolate",
+    preco: 6.00
+}
+
+
+const array = [item, item1, item2, item3]
+
+// console.log(item.nome, item.preco)
+
+array.forEach(function(item,index){
+    if (item.nome === "Leite") {
+        console.log(item.nome, item.preco);
+    }
+});
+
+// Cenário: Recrutamento de Desenvolvedores
+// Para todos os exercícios abaixo, vamos usar a seguinte lista de candidatos para vagas de tecnologia. Cada candidato é um objeto com várias propriedades.
+
+// JavaScript
+
+// // Estrutura de dados para os exercícios
+// const candidatos = [
+//   { nome: 'Ana Silva', idade: 28, vaga: 'Frontend', senioridade: 'Pleno', tecnologias: ['React', 'CSS', 'JavaScript'] },
+//   { nome: 'Bruno Costa', idade: 35, vaga: 'Backend', senioridade: 'Sênior', tecnologias: ['Python', 'Django', 'PostgreSQL'] },
+//   { nome: 'Carla Dias', idade: 23, vaga: 'Frontend', senioridade: 'Júnior', tecnologias: ['Vue', 'CSS', 'JavaScript'] },
+//   { nome: 'Daniel Faria', idade: 31, vaga: 'Fullstack', senioridade: 'Pleno', tecnologias: ['React', 'Node.js', 'TypeScript'] },
+//   { nome: 'Elena Moraes', idade: 29, vaga: 'Backend', senioridade: 'Pleno', tecnologias: ['Python', 'Flask', 'MongoDB'] }
+// ];
+
+// Exercício 1: Apresentação dos Candidatos (Acesso a Propriedades)
+// Objetivo: Praticar o acesso às propriedades de cada objeto dentro de um loop.
+
+// Tarefa:
+
+// Crie um laço de repetição que percorra a lista de candidatos.
+
+// Para cada candidato, exiba uma mensagem de apresentação no formato: "[Nome], [Idade] anos, se candidatou para [Vaga] [Senioridade]."
+
+// Exemplo de Saída para o primeiro candidato:
+// Ana Silva, 28 anos, se candidatou para Frontend Pleno.
+
+// Exercício 2: Filtrando por Vaga (Criando um Novo Array)
+// Objetivo: Praticar a criação de uma nova lista baseada em uma condição.
+
+// Tarefa:
+
+// Crie um novo array vazio chamado desenvolvedoresBackend.
+
+// Percorra a lista de candidatos.
+
+// Se a vaga de um candidato for igual a "Backend", adicione o objeto completo do candidato ao array desenvolvedoresBackend.
+
+// No final, exiba o novo array desenvolvedoresBackend.
+
+// Exercício 3: Buscando um Candidato Específico (Condições Múltiplas)
+// Objetivo: Praticar a busca por um item que satisfaça mais de uma condição.
+
+// Tarefa:
+
+// Encontre o nome do primeiro candidato da lista que seja Pleno e também da área Frontend.
+
+// Exiba o nome encontrado ou uma mensagem "Nenhum candidato Pleno de Frontend encontrado." caso não haja nenhum.
+
+// Desafio Final: Caça-Talentos por Tecnologia (Trabalhando com Arrays Aninhados)
+// Objetivo: Praticar o acesso a um array que está dentro de um objeto.
+
+// A propriedade tecnologias é um array! Sua tarefa é encontrar todos os candidatos que dominam uma tecnologia específica.
+
+// Tarefa:
+
+// Crie um novo array vazio chamado especialistasPython.
+
+// Percorra a lista de candidatos.
+
+// Para cada candidato, verifique se a sua lista de tecnologias inclui a string "Python".
+
+// Se incluir, adicione apenas o nome do candidato ao array especialistasPython.
+
+// No final, exiba o array especialistasPython.
 
