@@ -97,9 +97,11 @@ console.log(emailsValidos);
 // 3.  Dentro do laço, acesse a propriedade `preco` de cada produto e some o seu valor à variável `total`.
 // 4.  Após o laço terminar, exiba uma mensagem com o valor final, por exemplo: "O valor total da sua compra é R$ XX.XX".
 // ---------------------------------------------------------------------
+
+/*
 function iniciarCompra() {
 
-    let total = ''
+    let total = 0
 
     const item = {
         nome: "Maçã",
@@ -113,7 +115,7 @@ function iniciarCompra() {
 
     const item2 = {
         nome: "Pão",
-        preco: 7.20
+        preco: 7.00
     }
 
     const item3 = {
@@ -123,13 +125,13 @@ function iniciarCompra() {
 
     const array = [item, item1, item2, item3]
 
-    console.log("Para sair escreva 'SAIR', para ver o total da soma escreva 'TOTAL'.");
+    console.log("Para sair escreva 'SAIR'.");
     console.log("Para ver o total da soma escreva 'TOTAL'.");
     console.log("------- |ITENS DO MERCADO| -------");
 
     array.forEach(function(itens){
         console.log(itens.nome, itens.preco);
-    });
+    }); 
 
     let resposta
 
@@ -153,6 +155,7 @@ function iniciarCompra() {
         })
     }
 }
+*/
 
 // --------------------------------------------------------
 // Cenário: Recrutamento de Desenvolvedores
@@ -180,7 +183,9 @@ function iniciarCompra() {
 
 // Exemplo de Saída para o primeiro candidato:
 // Ana Silva, 28 anos, se candidatou para Frontend Pleno.
+// --------------------------------------------------------
 
+/*
 const candidatos = [
     { nome: 'Ana Silva', idade: 28, vaga: 'Frontend', senioridade: 'Pleno', tecnologias: ['React', 'CSS', 'JavaScript'] },
     { nome: 'Bruno Costa', idade: 35, vaga: 'Backend', senioridade: 'Sênior', tecnologias: ['Python', 'Django', 'PostgreSQL'] },
@@ -189,15 +194,12 @@ const candidatos = [
     { nome: 'Elena Moraes', idade: 29, vaga: 'Backend', senioridade: 'Pleno', tecnologias: ['Python', 'Flask', 'MongoDB'] }
 ];
 
-candidados.forEach(function(candidato)) {
-    console.log()
+candidatos.forEach(function(candidato) {
+    console.log(`${candidato.nome}, ${candidato.idade} anos, se candidatou para ${candidato.vaga} ${candidato.senioridade}.`)
+})
+*/
 
-}
-
-
-
-
-
+// --------------------------------------------------------
 // Exercício 2: Filtrando por Vaga (Criando um Novo Array)
 // Objetivo: Praticar a criação de uma nova lista baseada em uma condição.
 
@@ -210,7 +212,29 @@ candidados.forEach(function(candidato)) {
 // Se a vaga de um candidato for igual a "Backend", adicione o objeto completo do candidato ao array desenvolvedoresBackend.
 
 // No final, exiba o novo array desenvolvedoresBackend.
+// --------------------------------------------------------
 
+/*
+const candidatos = [
+    { nome: 'Ana Silva', idade: 28, vaga: 'Frontend', senioridade: 'Pleno', tecnologias: ['React', 'CSS', 'JavaScript'] },
+    { nome: 'Bruno Costa', idade: 35, vaga: 'Backend', senioridade: 'Sênior', tecnologias: ['Python', 'Django', 'PostgreSQL'] },
+    { nome: 'Carla Dias', idade: 23, vaga: 'Frontend', senioridade: 'Júnior', tecnologias: ['Vue', 'CSS', 'JavaScript'] },
+    { nome: 'Daniel Faria', idade: 31, vaga: 'Fullstack', senioridade: 'Pleno', tecnologias: ['React', 'Node.js', 'TypeScript'] },
+    { nome: 'Elena Moraes', idade: 29, vaga: 'Backend', senioridade: 'Pleno', tecnologias: ['Python', 'Flask', 'MongoDB'] }
+];
+
+let desenvolvedoresBackend = []
+
+candidatos.forEach(function(candidato) {
+    if (candidato.vaga === "Backend"){
+        desenvolvedoresBackend.push(candidato)
+    }
+})
+
+console.log(desenvolvedoresBackend)
+*/
+
+// --------------------------------------------------------
 // Exercício 3: Buscando um Candidato Específico (Condições Múltiplas)
 // Objetivo: Praticar a busca por um item que satisfaça mais de uma condição.
 
@@ -219,7 +243,36 @@ candidados.forEach(function(candidato)) {
 // Encontre o nome do primeiro candidato da lista que seja Pleno e também da área Frontend.
 
 // Exiba o nome encontrado ou uma mensagem "Nenhum candidato Pleno de Frontend encontrado." caso não haja nenhum.
+// --------------------------------------------------------
 
+const candidatos = [
+    { nome: 'Ana Silva', idade: 28, vaga: 'Frontend', senioridade: 'Pleno', tecnologias: ['React', 'CSS', 'JavaScript'] },
+    { nome: 'Bruno Costa', idade: 35, vaga: 'Backend', senioridade: 'Sênior', tecnologias: ['Python', 'Django', 'PostgreSQL'] },
+    { nome: 'Carla Dias', idade: 23, vaga: 'Frontend', senioridade: 'Júnior', tecnologias: ['Vue', 'CSS', 'JavaScript'] },
+    { nome: 'Daniel Faria', idade: 31, vaga: 'Fullstack', senioridade: 'Pleno', tecnologias: ['React', 'Node.js', 'TypeScript'] },
+    { nome: 'Elena Moraes', idade: 29, vaga: 'Backend', senioridade: 'Pleno', tecnologias: ['Python', 'Flask', 'MongoDB'] }
+];
+
+let achei = []
+
+candidatos.forEach(function(candidato){
+    if (candidato.senioridade === "Pleno" && candidato.vaga === "Frontend") {
+        achei.push(candidato)
+    }
+})
+
+    if (achei.length > 0) {
+        console.log(achei[0])
+    } else {
+        console.log("Nenhum candidato Pleno de Frontend encontrado.")
+    }
+
+
+//else {
+  //      console.log("Nenhum candidato Pleno de Frontend encontrado.")
+    //}
+
+// --------------------------------------------------------
 // Desafio Final: Caça-Talentos por Tecnologia (Trabalhando com Arrays Aninhados)
 // Objetivo: Praticar o acesso a um array que está dentro de um objeto.
 
@@ -236,4 +289,5 @@ candidados.forEach(function(candidato)) {
 // Se incluir, adicione apenas o nome do candidato ao array especialistasPython.
 
 // No final, exiba o array especialistasPython.
+// --------------------------------------------------------
 
