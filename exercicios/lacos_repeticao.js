@@ -97,50 +97,64 @@ console.log(emailsValidos);
 // 3.  Dentro do laço, acesse a propriedade `preco` de cada produto e some o seu valor à variável `total`.
 // 4.  Após o laço terminar, exiba uma mensagem com o valor final, por exemplo: "O valor total da sua compra é R$ XX.XX".
 // ---------------------------------------------------------------------
+function iniciarCompra() {
 
+    let total = ''
 
-let total = '';
-console.log(total, 'total');
-
-console.log(total + 'ola mundo', 'total somando')
-
-const carrinho = [{ nome: "Maçã", preco: 3.50 },{ nome: "Leite", preco: 5.80 },{ nome: "Pão", preco: 7.20 },{ nome: "Chocolate", preco: 6.00 }]
-
-const items = [ "Maçã", "Leite", "Pão", "Chocolate"]
-const precoItems = [3.50, 5.80, 7.20, 6.00]
-
-
-const item = {
-    nome: "Maçã",
-    preco: 3.50
-}
-
-const item1 = {
-    nome: "Leite",
-    preco: 5.80
-}
-
-const item2 = {
-    nome: "Pão",
-    preco: 7.20
-}
-
-const item3 = {
-    nome: "Chocolate",
-    preco: 6.00
-}
-
-
-const array = [item, item1, item2, item3]
-
-// console.log(item.nome, item.preco)
-
-array.forEach(function(item,index){
-    if (item.nome === "Leite") {
-        console.log(item.nome, item.preco);
+    const item = {
+        nome: "Maçã",
+        preco: 3.50
     }
-});
 
+    const item1 = {
+        nome: "Leite",
+        preco: 5.80
+    }
+
+    const item2 = {
+        nome: "Pão",
+        preco: 7.20
+    }
+
+    const item3 = {
+        nome: "Chocolate",
+        preco: 6.00
+    } 
+
+    const array = [item, item1, item2, item3]
+
+    console.log("Para sair escreva 'SAIR', para ver o total da soma escreva 'TOTAL'.");
+    console.log("Para ver o total da soma escreva 'TOTAL'.");
+    console.log("------- |ITENS DO MERCADO| -------");
+
+    array.forEach(function(itens){
+        console.log(itens.nome, itens.preco);
+    });
+
+    let resposta
+
+    while (true) {
+        resposta = prompt("Digite um item de cada (ou SAIR para encerrar):")
+
+        if (resposta === "SAIR"){
+            break
+        }
+
+        if (resposta === "TOTAL") {
+            console.log("O valor total da sua compra é R$ " + total)
+        continue
+        }
+
+        array.forEach(function(itens) {
+            if (resposta === itens.nome) {
+                total += itens.preco // total = total + itens.preco
+                console.log("Adicionado:", itens.nome, "- R$", itens.preco.toFixed(2))
+            }
+        })
+    }
+}
+
+// --------------------------------------------------------
 // Cenário: Recrutamento de Desenvolvedores
 // Para todos os exercícios abaixo, vamos usar a seguinte lista de candidatos para vagas de tecnologia. Cada candidato é um objeto com várias propriedades.
 
@@ -166,6 +180,23 @@ array.forEach(function(item,index){
 
 // Exemplo de Saída para o primeiro candidato:
 // Ana Silva, 28 anos, se candidatou para Frontend Pleno.
+
+const candidatos = [
+    { nome: 'Ana Silva', idade: 28, vaga: 'Frontend', senioridade: 'Pleno', tecnologias: ['React', 'CSS', 'JavaScript'] },
+    { nome: 'Bruno Costa', idade: 35, vaga: 'Backend', senioridade: 'Sênior', tecnologias: ['Python', 'Django', 'PostgreSQL'] },
+    { nome: 'Carla Dias', idade: 23, vaga: 'Frontend', senioridade: 'Júnior', tecnologias: ['Vue', 'CSS', 'JavaScript'] },
+    { nome: 'Daniel Faria', idade: 31, vaga: 'Fullstack', senioridade: 'Pleno', tecnologias: ['React', 'Node.js', 'TypeScript'] },
+    { nome: 'Elena Moraes', idade: 29, vaga: 'Backend', senioridade: 'Pleno', tecnologias: ['Python', 'Flask', 'MongoDB'] }
+];
+
+candidados.forEach(function(candidato)) {
+    console.log()
+
+}
+
+
+
+
 
 // Exercício 2: Filtrando por Vaga (Criando um Novo Array)
 // Objetivo: Praticar a criação de uma nova lista baseada em uma condição.
