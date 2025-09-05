@@ -245,6 +245,7 @@ console.log(desenvolvedoresBackend)
 // Exiba o nome encontrado ou uma mensagem "Nenhum candidato Pleno de Frontend encontrado." caso não haja nenhum.
 // --------------------------------------------------------
 
+/*
 const candidatos = [
     { nome: 'Ana Silva', idade: 28, vaga: 'Frontend', senioridade: 'Pleno', tecnologias: ['React', 'CSS', 'JavaScript'] },
     { nome: 'Bruno Costa', idade: 35, vaga: 'Backend', senioridade: 'Sênior', tecnologias: ['Python', 'Django', 'PostgreSQL'] },
@@ -257,7 +258,7 @@ let achei = []
 
 candidatos.forEach(function(candidato){
     if (candidato.senioridade === "Pleno" && candidato.vaga === "Frontend") {
-        achei.push(candidato)
+        achei.push(candidato);
     }
 })
 
@@ -268,26 +269,42 @@ candidatos.forEach(function(candidato){
     }
 
 
-//else {
-  //      console.log("Nenhum candidato Pleno de Frontend encontrado.")
-    //}
+// ---->
+    for (const candidato of candidatos) {
+  if (candidato.senioridade === 'Pleno' && candidato.vaga === 'Frontend') {
+    nomeEncontrado = candidato.nome;
+    break; // Para o loop assim que encontrar o primeiro
+  }
+}
+*/
 
 // --------------------------------------------------------
 // Desafio Final: Caça-Talentos por Tecnologia (Trabalhando com Arrays Aninhados)
 // Objetivo: Praticar o acesso a um array que está dentro de um objeto.
-
 // A propriedade tecnologias é um array! Sua tarefa é encontrar todos os candidatos que dominam uma tecnologia específica.
-
 // Tarefa:
-
-// Crie um novo array vazio chamado especialistasPython.
-
-// Percorra a lista de candidatos.
-
+// Crie um novo array vazio chamado especialistasPython. OK
+// Percorra a lista de candidatos. OK
 // Para cada candidato, verifique se a sua lista de tecnologias inclui a string "Python".
-
 // Se incluir, adicione apenas o nome do candidato ao array especialistasPython.
-
 // No final, exiba o array especialistasPython.
 // --------------------------------------------------------
 
+const candidatos = [
+    { nome: 'Ana Silva', idade: 28, vaga: 'Frontend', senioridade: 'Pleno', tecnologias: ['React', 'CSS', 'JavaScript'] },
+    { nome: 'Bruno Costa', idade: 35, vaga: 'Backend', senioridade: 'Sênior', tecnologias: ['Python', 'Django', 'PostgreSQL'] },
+    { nome: 'Carla Dias', idade: 23, vaga: 'Frontend', senioridade: 'Júnior', tecnologias: ['Vue', 'CSS', 'JavaScript'] },
+    { nome: 'Daniel Faria', idade: 31, vaga: 'Fullstack', senioridade: 'Pleno', tecnologias: ['React', 'Node.js', 'TypeScript'] },
+    { nome: 'Elena Moraes', idade: 29, vaga: 'Backend', senioridade: 'Pleno', tecnologias: ['Python', 'Flask', 'MongoDB'] }
+];
+
+especialistasPython = [];
+
+candidatos.forEach(function(candidato){
+    if (candidato.tecnologias.includes('Python')){
+        especialistasPython.push(candidato.nome);
+    }
+})
+
+console.log("Candidatos que trabalham com Python:");
+console.log(especialistasPython);
