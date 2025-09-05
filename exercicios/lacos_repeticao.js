@@ -283,8 +283,8 @@ candidatos.forEach(function(candidato){
 // Objetivo: Praticar o acesso a um array que está dentro de um objeto.
 // A propriedade tecnologias é um array! Sua tarefa é encontrar todos os candidatos que dominam uma tecnologia específica.
 // Tarefa:
-// Crie um novo array vazio chamado especialistasPython. OK
-// Percorra a lista de candidatos. OK
+// Crie um novo array vazio chamado especialistasPython. 
+// Percorra a lista de candidatos. 
 // Para cada candidato, verifique se a sua lista de tecnologias inclui a string "Python".
 // Se incluir, adicione apenas o nome do candidato ao array especialistasPython.
 // No final, exiba o array especialistasPython.
@@ -308,3 +308,5 @@ candidatos.forEach(function(candidato){
 
 console.log("Candidatos que trabalham com Python:");
 console.log(especialistasPython);
+
+// --------------------------------------------------------
