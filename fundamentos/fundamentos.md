@@ -32,3 +32,5 @@ while: Para repetir enquanto uma condição for verdadeira.
 for: Para repetir um número específico de vezes, ótimo para percorrer arrays.
 
 
+
+
