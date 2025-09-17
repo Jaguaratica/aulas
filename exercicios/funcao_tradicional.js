@@ -6,6 +6,7 @@
 // Por que usar uma função? Para reutilizar a mesma estrutura de saudação para diferentes nomes.
 // --------------------------------------------------------
 
+/*
 function saudacao(nome) {
     return `Olá ${nome}, seja muito bem-vindo`;
 }
@@ -16,7 +17,9 @@ console.log(saudacao("Gustavo"));
 // Objetivo: Criar uma função que recebe um número e retorna true se for par e false se for ímpar.
 // Por que usar uma função? Para encapsular a lógica de verificação e poder usá-la em diferentes partes do seu programa.
 // --------------------------------------------------------
+*/
 
+/*
 function parImpar(numero) {
     if (numero % 2 === 0){
         console.log(`O número ${numero} é par`);
@@ -26,6 +29,7 @@ function parImpar(numero) {
 }
 
 console.log(parImpar(27));
+*/
 
 // --------------------------------------------------------
 // Nível 2: Funções com Arrays e Objetos
@@ -36,7 +40,13 @@ console.log(parImpar(27));
 // Por que usar uma função? Para abstrair a lógica de iteração e comparação, tornando a busca pelo maior número uma operação simples e reutilizável.
 // --------------------------------------------------------
 
+/*
+function acharMaior(array) {
+    return Math.max(...array);
+}
 
+console.log(acharMaior([7, 4, 8]))
+*/
 
 // --------------------------------------------------------
 // Exercício 4: Extrair Informações de um Objeto
@@ -44,7 +54,19 @@ console.log(parImpar(27));
 // Por que usar uma função? Para padronizar a forma como as informações do usuário são exibidas.
 // --------------------------------------------------------
 
+/*
+function mostrarPerfil(usuario) {
+  return `Nome: ${usuario.nome}, Idade: ${usuario.idade}, Email: ${usuario.email};`;
+}
 
+const usuario = {
+  nome: prompt("Escreva seu nome:"),
+  idade: parseFloat(prompt("Escreva sua idade:")),
+  email: prompt("Escreva seu email:")
+};
+
+console.log(mostrarPerfil(usuario));
+*/
 
 // --------------------------------------------------------
 // Nível 3: Funções e Manipulação do DOM
@@ -55,9 +77,33 @@ console.log(parImpar(27));
 // Por que usar uma função? Para responder a uma ação do usuário (como um clique de botão) e modificar a interface.
 // --------------------------------------------------------
 
+/*
+function alterarParagrafo() {
+    if (textoAlterado != null){
+        return document.getElementById("titulo").textContent = textoAlterado;
+    }
+}
 
+function alterarParagrafo() {
+    let textoAlterado = prompt("Escreva o Título");
+    if (textoAlterado != null) {
+        document.getElementById("titulo").textContent = textoAlterado;
+    }
+}
+
+alterarParagrafo();
+*/
 
 // --------------------------------------------------------
 // Exercício 6: Adicionar um Item a uma Lista
 // Objetivo: Criar uma função que adiciona um novo item a uma lista não ordenada (<ul>) a partir do valor de um campo de input.
 // Por que usar uma função? Para encapsular a lógica de criação de um novo elemento, definição de seu conteúdo e inserção no DOM.
+
+let listaMercado = [];
+
+function adicionarLista(listaMercado) {
+    let produto = prompt("Fala um ingrediente ai:")
+    produto.push
+}
+
+adicionarLista();
