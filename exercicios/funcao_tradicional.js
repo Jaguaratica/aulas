@@ -6,15 +6,26 @@
 // Por que usar uma função? Para reutilizar a mesma estrutura de saudação para diferentes nomes.
 // --------------------------------------------------------
 
+function saudacao(nome) {
+    return `Olá ${nome}, seja muito bem-vindo`;
+}
 
-
+console.log(saudacao("Gustavo"));
 // --------------------------------------------------------
 // Exercício 2: Par ou Ímpar
 // Objetivo: Criar uma função que recebe um número e retorna true se for par e false se for ímpar.
 // Por que usar uma função? Para encapsular a lógica de verificação e poder usá-la em diferentes partes do seu programa.
 // --------------------------------------------------------
 
+function parImpar(numero) {
+    if (numero % 2 === 0){
+        console.log(`O número ${numero} é par`);
+    } else {
+        console.log(`O número ${numero} é impar`);
+    }
+}
 
+console.log(parImpar(27));
 
 // --------------------------------------------------------
 // Nível 2: Funções com Arrays e Objetos

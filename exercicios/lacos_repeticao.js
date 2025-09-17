@@ -174,13 +174,9 @@ function iniciarCompra() {
 
 // Exercício 1: Apresentação dos Candidatos (Acesso a Propriedades)
 // Objetivo: Praticar o acesso às propriedades de cada objeto dentro de um loop.
-
 // Tarefa:
-
 // Crie um laço de repetição que percorra a lista de candidatos.
-
 // Para cada candidato, exiba uma mensagem de apresentação no formato: "[Nome], [Idade] anos, se candidatou para [Vaga] [Senioridade]."
-
 // Exemplo de Saída para o primeiro candidato:
 // Ana Silva, 28 anos, se candidatou para Frontend Pleno.
 // --------------------------------------------------------
@@ -202,15 +198,10 @@ candidatos.forEach(function(candidato) {
 // --------------------------------------------------------
 // Exercício 2: Filtrando por Vaga (Criando um Novo Array)
 // Objetivo: Praticar a criação de uma nova lista baseada em uma condição.
-
 // Tarefa:
-
 // Crie um novo array vazio chamado desenvolvedoresBackend.
-
 // Percorra a lista de candidatos.
-
 // Se a vaga de um candidato for igual a "Backend", adicione o objeto completo do candidato ao array desenvolvedoresBackend.
-
 // No final, exiba o novo array desenvolvedoresBackend.
 // --------------------------------------------------------
 
@@ -237,11 +228,8 @@ console.log(desenvolvedoresBackend)
 // --------------------------------------------------------
 // Exercício 3: Buscando um Candidato Específico (Condições Múltiplas)
 // Objetivo: Praticar a busca por um item que satisfaça mais de uma condição.
-
 // Tarefa:
-
 // Encontre o nome do primeiro candidato da lista que seja Pleno e também da área Frontend.
-
 // Exiba o nome encontrado ou uma mensagem "Nenhum candidato Pleno de Frontend encontrado." caso não haja nenhum.
 // --------------------------------------------------------
 
