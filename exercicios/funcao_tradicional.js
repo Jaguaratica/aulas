@@ -77,33 +77,42 @@ console.log(mostrarPerfil(usuario));
 // Por que usar uma função? Para responder a uma ação do usuário (como um clique de botão) e modificar a interface.
 // --------------------------------------------------------
 
-/*
-function alterarParagrafo() {
-    if (textoAlterado != null){
-        return document.getElementById("titulo").textContent = textoAlterado;
+function alterarTitulo() {
+    const tituloHtml = document.getElementById("titulo-input");
+
+    if (tituloHtml != null) {
+        let novoTituloHtml = document.getElementById("titulo").textContent = tituloHtml.value
+    } else {
+        console.log("tem nada");
     }
 }
-
-function alterarParagrafo() {
-    let textoAlterado = prompt("Escreva o Título");
-    if (textoAlterado != null) {
-        document.getElementById("titulo").textContent = textoAlterado;
-    }
-}
-
-alterarParagrafo();
-*/
 
 // --------------------------------------------------------
 // Exercício 6: Adicionar um Item a uma Lista
 // Objetivo: Criar uma função que adiciona um novo item a uma lista não ordenada (<ul>) a partir do valor de um campo de input.
 // Por que usar uma função? Para encapsular a lógica de criação de um novo elemento, definição de seu conteúdo e inserção no DOM.
 
-let listaMercado = [];
+function adicionarLista() {
+    const itemHtml = document.getElementById("item-input");
+    const novoItemTexto = itemHtml.value
+    // console.log(novoItem);
 
-function adicionarLista(listaMercado) {
-    let produto = prompt("Fala um ingrediente ai:")
-    produto.push
+    if (novoItemTexto.trim() != "") {
+        // 2. Criar um novo elemento de item de lista (<li>)
+        const novoItem = document.createElement("li");
+
+        // 3. Definir o texto do novo item de lista
+        novoItem.textContent = novoItemTexto;
+
+        // 4. Adicionar o novo item de lista à lista não ordenada
+        let listaItens = document.getElementById("lista-itens");
+        listaItens.appendChild(novoItem);
+
+        // 5. Limpar o campo de input
+        itemHtml.value = "";
+    } else {
+        console.log("tem nada")
+    }
 }
 
-adicionarLista();
+
