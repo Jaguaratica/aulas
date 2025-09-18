@@ -211,3 +211,38 @@ if (indiceEduardo != -1) {
 console.log(corredores);
 console.log(pelotaoDaFrente);
 */
+
+
+// ----- Parte 2
+// Lista de Manipulação de Arrays Usando Apenas for
+// 1. Percorrer e Exibir Itens de um Array
+// Objetivo: Passar por cada item de um array e exibi-lo no console.
+
+
+
+var frutas = ["Maçã", "Banana", "Laranja", "Uva"];
+
+// 2. Criar uma Cópia de um Array
+// Objetivo: Gerar um segundo array que seja uma cópia exata do primeiro.
+
+
+var original = [10, 20, 30, 40];
+
+// 3. Somar Todos os Valores de um Array de Números
+// Objetivo: Calcular a soma total dos números contidos em um array.
+
+
+var gastos = [200.50, 45.00, 120.00, 30.25];
+
+// 4. Encontrar o Maior Número em um Array
+// Objetivo: Descobrir qual é o maior valor dentro de um array de números.
+
+
+
+var notas = [5.5, 8.0, 9.5, 4.0, 7.8];
+
+// 5. Inverter a Ordem de um Array
+// Objetivo: Criar um novo array com os itens do array original em ordem inversa.
+
+
+var sequencia = ["A", "B", "C", "D", "E"];
