@@ -83,7 +83,7 @@ function alterarTitulo() {
     if (tituloHtml != null) {
         let novoTituloHtml = document.getElementById("titulo").textContent = tituloHtml.value
     } else {
-        console.log("tem nada");
+        console.log("status: null");
     }
 }
 
@@ -111,7 +111,7 @@ function adicionarLista() {
         // 5. Limpar o campo de input
         itemHtml.value = "";
     } else {
-        console.log("tem nada")
+        console.log("status: null")
     }
 }
 

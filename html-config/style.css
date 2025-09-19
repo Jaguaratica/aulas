@@ -1,0 +1,186 @@
+        /* VARIAVEIS CSS PARA TEMATIZAÇÃO CONSISTENTE */
+        :root {
+            --primary-color: #b8e3ff;
+            --secondary-color: #5200d6;
+            --dark-color: #000000;
+            --light-color: #ecf0f1;
+            --text-color: #333;
+            --text-light: #777;
+            --spacing: 8px;
+            --border-radius: 4px;
+        }
+
+        /* REDEFINIR E ESTILOS DE BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+        }
+
+        /* CONTAINER PARA CENTRALIZAR O CONTEÚDO */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 calc(var(--spacing) * 2);
+        }
+
+        /* ESTILO DO CABEÇALHO */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: calc(var(--spacing) * 2) 0;
+        }
+
+        .logo {
+            width: 5%;         /* Percentage of container */
+            height: auto;
+            color: var(--primary-color);
+        }
+
+        /* NAVEGAÇÃO */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: calc(var(--spacing) * 3);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* SEÇÃO HERO */
+        .hero {
+            padding: calc(var(--spacing) * 8) 0;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: calc(var(--spacing) * 2);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* SEÇÃO DE ESTILIZAÇÃO */
+        section {
+            padding: calc(var(--spacing) * 6) 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: calc(var(--spacing) * 4);
+            color: var(--dark-color);
+        }
+
+        /* GRADE DE CARTÕES PARA RECURSOS OU SERVIÇOS */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: calc(var(--spacing) * 3);
+            margin-top: calc(var(--spacing) * 4);
+        }
+
+        .card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-content {
+            padding: calc(var(--spacing) * 3);
+        }
+
+        /* RODAPÉ */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: calc(var(--spacing) * 4) 0;
+            text-align: center;
+        }
+
+        /* DESING RESPONSIVO */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: calc(var(--spacing) * 2);
+                justify-content: center;
+            }
+            
+            nav li {
+                margin: 0 calc(var(--spacing) * 1.5);
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* FONTES */
+
+        .special-gothic-expanded-one-regular {
+            font-family: "Special Gothic Expanded One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }   
+
+        .lato-bold {
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        }
+
+        .sansation-regular {
+        font-family: "Sansation", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        .outfit-1 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        }
