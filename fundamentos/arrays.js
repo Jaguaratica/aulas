@@ -69,4 +69,8 @@ for (let indice = indiceFrutaInicial; indice<=indiceFrutaFinal; indice++){
 //  Conceito: A ordem dos seus dados no array define como o fatiamento e o acesso funcionam.
 //  Ênfase: Se você pede um trecho "entre Laranja e Maçã", o código precisa primeiro achar os índices (`2` e `0`) e então entender que a fatia deve ir do menor para o maior (`0` para `2`), respeitando a ordem original da prateleira.
 
+const arrayAnimais = ["gato, cachorro"];
 
+arrayAnimais.push("coelho");
+
+console.log(arrayAnimais)

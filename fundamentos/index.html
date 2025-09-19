@@ -3,22 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aulas JavaScript</title>
+    <link rel="stylesheet" href="../estilizacao/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@636&family=Fjalla+One&family=Honk&family=Hubballi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@636&family=Fjalla+One&family=Honk&family=Hubballi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@636&family=Fjalla+One&family=Honk&family=Hubballi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1 id="titulo">TITULO</h1>
-    <input type="text" id="titulo-input" placeholder="Escreva o titulo"></input>
-    <button id="startButton" onclick="alterarTitulo()">Alterar</button>
-    <p></p>
-    <input type="text" id="item-input" placeholder="Escreva um item"></input>
-    <button id="startButton" onclick="adicionarLista()">Adicionar</button>
-    <ul id="lista-itens"></ul>
+    <div class="main-block">
+        <h1 id="titulo" class="special-gothic-expanded-one-regular">EXPLORANDO JAVASCRIPT</h1>
+
+        <div class="bloco-estilo1">
+            <p class="outfit-1">A seguinte função tem o objetivo de atualizar o texto de um elemento na página digitando em um input. Se não houver nenhum valor, exibe uma mensagem no console.
+        </div>
+
+        <div class="input-button">
+            <input type="text" id="titulo-input" class="inputs" placeholder="titulo"></input>
+            <button class="button1 sansation-regular" onclick="alterarTitulo()">Alterar</button>
+        </div>
+
+        <p></p>
+
+        <div class="bloco-estilo1">
+            <p class="outfit-1">A função pega o valor de um input e, se não estiver vazio, cria um novo item de lista (li) com esse valor, adiciona à lista existente e limpa o input; se estiver vazio, exibe uma mensagem no console.
+        </div>
+
+        <div class="input-button">
+            <input type="text" id="item-input" class="inputs" placeholder="item"></input>
+            <button class="button1 sansation-regular" onclick="adicionarLista()">Adicionar</button>
+            <ul id="lista-itens"></ul>
+        </div>
+    </div>
+
+
+
+
     <!-- <script src = "exercicios.js"></script> -->
     <!-- <script src = "../exercicios/string.js"></script> -->
     <!-- <script src = "../exercicios/arrays.js"></script> -->
     <!-- <script src = "../exercicios/lacos_repeticao.js"></script> -->
-    <!-- <script src = "../exercicios/funcao_tradicional.js"></script -->
+    <script src = "../exercicios/funcao_tradicional.js"></script>
+    <script src = "../fundamentos/arrays.js"></script>
 
 <!--
     <script>
