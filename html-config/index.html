@@ -44,15 +44,16 @@
         <section class="hero" id="home">
             <div class="container">
                 <h1 id="titulo" class="special-gothic-expanded-one-regular">EXPLORANDO JAVASCRIPT</h1>
-                <p>XXXX</p>
+                <p>Este repositório contém materiais, exercícios e exemplos práticos das aulas de JavaScript.<br>
+                O objetivo é auxiliar no aprendizado da linguagem, desde os conceitos básicos até tópicos mais avançados.</p>
             </div>
         </section>
 
         <!-- SEÇÃO ABOUT US -->
         <section id="about">
             <div class="container">
-                <h2>XXXX</h2>
-                <p>XXXX</p>
+                <h2>FUNÇÕES EXEMPLIFICADAS</h2>
+                <p>Teste você mesmo!</p>
                 
                 <div class="card-grid">
                     <div class="card">
@@ -65,11 +66,11 @@
                                 2. Define como novo texto do título<br>
                                 Se não existir:<br>
                                 - Mostra "tem nada" no console<br><br>
-                                Input → Verifica → Atualiza título
+                                Input → Verifica → Atualiza título<br><br>
                                 </p>
                             </p>
                             <input type="text" id="titulo-input" class="inputs" placeholder="titulo"></input>
-                            <button class="button1 sansation-regular" onclick="alterarTitulo()">Alterar</button>
+                            <button class="button-style1" onclick="alterarTitulo()">Alterar</button>
                         </div>
                     </div>
                     <div class="card">
@@ -82,17 +83,30 @@
                             2. Adiciona à lista<br>
                             3. Limpa o campo<br>
                             Se vazio: não faz nada<br></br>
-                            Input → Valida → Adiciona → Limpa
+                            Input → Valida → Adiciona → Limpa<br><br>
                             </p>
                             <input type="text" id="item-input" class="inputs" placeholder="item"></input>
-                            <button class="button1 sansation-regular" onclick="adicionarLista()">Adicionar</button>
+                            <button class="button-style1" onclick="adicionarLista()">Adicionar</button>
                             <ul id="lista-itens"></ul>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <h3>XXX</h3>
-                            <p>XXX</p>
+                            <h3>function descobrirIndice()</h3>
+                            <p>Pega texto do input<br>
+                            Converte para minúsculo<br>
+                            Busca no array de frutas<br>
+                            Se encontrado: mostra o índice<br>
+                            Se não: mostra "não encontrado"<br><br>
+                            Input → Converte → Busca → Mostra resultado<br><br>
+
+                            Escreva o nome de uma das seguintes frutas para verificar seu indice:<br>
+                            ["Maçã", "Banana", "Laranja", "Uva", "Morango"]<br><br>
+                            </p>
+                            </p>
+                            <input type="text" id="frutas-input" class="inputs" placeholder="item"></input>
+                            <button class="button-style1" onclick="descobrirIndice()">Adicionar</button>
+                            <p id="resultado"></p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +163,7 @@
                         <label for="message" style="display: block; margin-bottom: 5px;">Mensagem</label>
                         <textarea id="message" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: var(--border-radius);"></textarea>
                     </div>
-                    <button type="submit" style="background-color: var(--primary-color); color: white; border: none; padding: 12px 24px; border-radius: var(--border-radius); cursor: pointer;">Enviar Mensagem</button>
+                    <button type="submit" class="button-style2" >Enviar Mensagem</button>
                 </form>
             </div>
         </section>
@@ -161,7 +175,7 @@
             <p>&copy; 2025 Jaguaratica's. Todos os direito reservados.</p>
         </div>
     </footer>
-
     <script src="../exercicios/funcao_tradicional.js"></script>
+    <script src="../fundamentos/arrays.js"></script>
 </body>
 </html>

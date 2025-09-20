@@ -1,7 +1,7 @@
         /* VARIAVEIS CSS PARA TEMATIZAÇÃO CONSISTENTE */
         :root {
-            --primary-color: #b8e3ff;
-            --secondary-color: #5200d6;
+            --primary-color: #ff63cb;
+            --secondary-color: #4300af;
             --dark-color: #000000;
             --light-color: #ecf0f1;
             --text-color: #333;
@@ -90,7 +90,7 @@
 
         .hero p {
             font-size: 1.2rem;
-            max-width: 700px;
+            max-width: 950px;
             margin: 0 auto;
         }
 
@@ -103,6 +103,32 @@
             text-align: center;
             margin-bottom: calc(var(--spacing) * 4);
             color: var(--dark-color);
+        }
+
+        /* BOTÕES */
+
+        .button-style1 {
+            background-color: var(--secondary-color);
+            color: white; 
+            border: none; 
+            padding: 5px 16px; 
+            border-radius: var(--border-radius); 
+            cursor: pointer;
+        }
+
+        .button-style2 {
+            background-color: var(--secondary-color);
+            color: white; 
+            border: none; 
+            padding: 12px 24px; 
+            border-radius: var(--border-radius); 
+            cursor: pointer;
+        }
+
+        /* INPUTS */
+
+        .inputs {
+            padding: 2px 20px; 
         }
 
         /* GRADE DE CARTÕES PARA RECURSOS OU SERVIÇOS */
