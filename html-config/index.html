@@ -65,7 +65,7 @@
                                 1. Pega o valor do input<br>
                                 2. Define como novo texto do título<br>
                                 Se não existir:<br>
-                                - Mostra "tem nada" no console<br><br>
+                                - Mostra "status: null" no console<br><br>
                                 Input → Verifica → Atualiza título<br><br>
                                 </p>
                             </p>
@@ -82,7 +82,8 @@
                             1. Cria item de lista<br>
                             2. Adiciona à lista<br>
                             3. Limpa o campo<br>
-                            Se vazio: não faz nada<br></br>
+                            Se não existir:<br>
+                            - Mostra "status: null" no console<br><br>
                             Input → Valida → Adiciona → Limpa<br><br>
                             </p>
                             <input type="text" id="item-input" class="inputs" placeholder="item"></input>
@@ -94,9 +95,9 @@
                         <div class="card-content">
                             <h3>function descobrirIndice()</h3>
                             <p>Pega texto do input<br>
-                            Converte para minúsculo<br>
-                            Busca no array de frutas<br>
-                            Se encontrado: mostra o índice<br>
+                            1. Converte para minúsculo<br>
+                            2. Busca no array de frutas<br>
+                            3. Se encontrado: mostra o índice<br>
                             Se não: mostra "não encontrado"<br><br>
                             Input → Converte → Busca → Mostra resultado<br><br>
 
