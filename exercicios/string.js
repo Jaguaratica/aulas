@@ -1,3 +1,5 @@
+/*
+
 // Exercício 1: Saudação Personalizada
 // Conceitos: Variáveis, prompt, alert, concatenação simples.
 // Use prompt para perguntar o nome do usuário.
@@ -73,18 +75,35 @@ if (idade > 18) {
 // --------------------------------------------------------
 
 // Guardando notas em variáveis
-const nota1 = parseFloat(prompt("Escreva sua 1° nota:"));
-const nota2 = parseFloat(prompt("Escreva sua 2° nota:"));
-const nota3 = parseFloat(prompt("Escreva sua 3° nota:"));
-const media = (nota1 + nota2 + nota3) / 3;
 
-// Informações no console
-if (media < 5) {
-    console.log("Você está reprovado.");
-} else if (media > 7) {
-    console.log("Você está aprovado.");
-} else {
-    console.log("Você está de recuperação.");
+// Prox function
+// 1. Criar três espaços de input no HTML
+// 2. getElementById dos inputs
+// 3. Criar variavel calculo média - inputs
+// 4. Criar os ifs (associar ao getElementById)
+
+*/
+
+// --------------------->
+
+function calcularNota() {
+    const nota1 = parseFloat(document.getElementById("nota-1").value);
+    const nota2 = parseFloat(document.getElementById("nota-2").value);
+    const nota3 = parseFloat(document.getElementById("nota-3").value);
+    const media = (nota1 + nota2 + nota3) / 3;
+
+    const resultadoElemento = document.getElementById("resultado-calculo");
+
+    if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+        resultadoElemento.textContent = "Coloque todas as notas!";
+        return;
+    }
+
+    if (media < 5) {
+        resultadoElemento.textContent = "Sua nota final é: " + media.toFixed(2) + " - Reprovado";
+    } else if (media >= 7) {
+        resultadoElemento.textContent = "Sua nota final é: " + media.toFixed(2) + " - Aprovado";
+    } else {
+        resultadoElemento.textContent = "Sua nota final é: " + media.toFixed(2) + " - Recuperação";
+    }
 }
-
-
