@@ -1,3 +1,5 @@
+// NO FUNCTION
+// ---------------------------------------------------------------------
 // Nível 1: Básico (Apenas Lendo e Exibindo)
 // O objetivo aqui é se familiarizar com a sintaxe do laço de repetição (`loop`) para "visitar" cada item.
 // Exercício 1: Tour pela Galáxia
@@ -23,6 +25,7 @@ destinos.forEach(function(destino){
 })
 */
 
+// NO FUNCTION
 // ---------------------------------------------------------------------
 // Nível 2: Intermediário (Criando um Novo Array)
 // Aqui, vamos usar um laço para transformar os dados de um array e guardar o resultado em um novo array.
@@ -49,6 +52,7 @@ numeros.forEach(function(numDobro){
 console.log(dobros);
 */
 
+// NO FUNCTION
 // ---------------------------------------------------------------------
 // Nível 3: Avançado (Loop com Condição)
 // Agora, vamos combinar laços com uma condição (`if`) para processar apenas os itens que nos interessam.
@@ -77,6 +81,7 @@ emails.forEach(function(email){
 console.log(emailsValidos);
 */
 
+// NO FUNCTION
 // ---------------------------------------------------------------------
 // Desafio Final: Processando Dados Complexos
 // Este desafio envolve percorrer um array de objetos, que é um cenário muito comum em programação real.
@@ -157,7 +162,8 @@ function iniciarCompra() {
 }
 */
 
-// --------------------------------------------------------
+// NO FUNCTION
+// ---------------------------------------------------------------------
 // Cenário: Recrutamento de Desenvolvedores
 // Para todos os exercícios abaixo, vamos usar a seguinte lista de candidatos para vagas de tecnologia. Cada candidato é um objeto com várias propriedades.
 
@@ -179,7 +185,7 @@ function iniciarCompra() {
 // Para cada candidato, exiba uma mensagem de apresentação no formato: "[Nome], [Idade] anos, se candidatou para [Vaga] [Senioridade]."
 // Exemplo de Saída para o primeiro candidato:
 // Ana Silva, 28 anos, se candidatou para Frontend Pleno.
-// --------------------------------------------------------
+// ---------------------------------------------------------------------
 
 /*
 const candidatos = [
@@ -195,7 +201,8 @@ candidatos.forEach(function(candidato) {
 })
 */
 
-// --------------------------------------------------------
+// NO FUNCTION
+// ---------------------------------------------------------------------
 // Exercício 2: Filtrando por Vaga (Criando um Novo Array)
 // Objetivo: Praticar a criação de uma nova lista baseada em uma condição.
 // Tarefa:
@@ -203,7 +210,7 @@ candidatos.forEach(function(candidato) {
 // Percorra a lista de candidatos.
 // Se a vaga de um candidato for igual a "Backend", adicione o objeto completo do candidato ao array desenvolvedoresBackend.
 // No final, exiba o novo array desenvolvedoresBackend.
-// --------------------------------------------------------
+// ---------------------------------------------------------------------
 
 /*
 const candidatos = [
@@ -225,13 +232,14 @@ candidatos.forEach(function(candidato) {
 console.log(desenvolvedoresBackend)
 */
 
-// --------------------------------------------------------
+// NO FUNCTION
+// ---------------------------------------------------------------------
 // Exercício 3: Buscando um Candidato Específico (Condições Múltiplas)
 // Objetivo: Praticar a busca por um item que satisfaça mais de uma condição.
 // Tarefa:
 // Encontre o nome do primeiro candidato da lista que seja Pleno e também da área Frontend.
 // Exiba o nome encontrado ou uma mensagem "Nenhum candidato Pleno de Frontend encontrado." caso não haja nenhum.
-// --------------------------------------------------------
+// ---------------------------------------------------------------------
 
 /*
 const candidatos = [
@@ -266,7 +274,8 @@ candidatos.forEach(function(candidato){
 }
 */
 
-// --------------------------------------------------------
+// NO FUNCTION
+// ---------------------------------------------------------------------
 // Desafio Final: Caça-Talentos por Tecnologia (Trabalhando com Arrays Aninhados)
 // Objetivo: Praticar o acesso a um array que está dentro de um objeto.
 // A propriedade tecnologias é um array! Sua tarefa é encontrar todos os candidatos que dominam uma tecnologia específica.
@@ -276,8 +285,9 @@ candidatos.forEach(function(candidato){
 // Para cada candidato, verifique se a sua lista de tecnologias inclui a string "Python".
 // Se incluir, adicione apenas o nome do candidato ao array especialistasPython.
 // No final, exiba o array especialistasPython.
-// --------------------------------------------------------
+// ---------------------------------------------------------------------
 
+/*
 const candidatos = [
     { nome: 'Ana Silva', idade: 28, vaga: 'Frontend', senioridade: 'Pleno', tecnologias: ['React', 'CSS', 'JavaScript'] },
     { nome: 'Bruno Costa', idade: 35, vaga: 'Backend', senioridade: 'Sênior', tecnologias: ['Python', 'Django', 'PostgreSQL'] },
@@ -296,5 +306,6 @@ candidatos.forEach(function(candidato){
 
 console.log("Candidatos que trabalham com Python:");
 console.log(especialistasPython);
+*/
 
 // --------------------------------------------------------

@@ -1,16 +1,16 @@
-// FUNCTION ALTERAR TITULO
+// 1. FUNCTION ALTERAR TITULO funcao_tradicional.js
 function alterarTitulo() {
     const tituloHtml = document.getElementById("titulo-input");
 
-    if (tituloHtml != null) {
+    if (tituloHtml  && tituloHtml.value.trim() != "") {
         let novoTituloHtml = document.getElementById("titulo").textContent = tituloHtml.value
     } else {
-        console.log("status: null");
+        document.getElementById("titulo-null").textContent = "Null";
     }
 }
 
 
-// FUNCTION ADICIONAR LISTA
+// 2. FUNCTION ADICIONAR LISTA funcao_tradicional.js
 function adicionarLista() {
     const itemHtml = document.getElementById("item-input");
     const novoItemTexto = itemHtml.value
@@ -30,7 +30,7 @@ function adicionarLista() {
 }
 
 
-// FUNCTION DESCOBRIR INDICE
+// 3. FUNCTION DESCOBRIR INDICE arrays.js
 function descobrirIndice() {
         frutas = ["Maçã", "Banana", "Laranja", "Uva", "Morango"];
         const inputDasFrutas = document.getElementById("frutas-input");
@@ -51,7 +51,7 @@ function descobrirIndice() {
 }
 
 
-// FUNCTION CALCULAR MÉDIA
+// 4. FUNCTION CALCULAR MÉDIA string.js
 function calcularNota() {
     const nota1 = parseFloat(document.getElementById("nota-1").value);
     const nota2 = parseFloat(document.getElementById("nota-2").value);
@@ -71,5 +71,41 @@ function calcularNota() {
         resultadoElemento.textContent = "Sua nota final é: " + media.toFixed(2) + " - Aprovado";
     } else {
         resultadoElemento.textContent = "Sua nota final é: " + media.toFixed(2) + " - Recuperação";
+    }
+}
+
+// 5. FUNCTION ALTERAR ITEM DA LISTA arrays.js
+function alterarItemLista() { 
+    const inputValor = document.getElementById("input-lista").value;
+    const listaElement = document.getElementById("lista");
+    const itens = listaElement.getElementsByTagName("li");
+    
+    if (inputValor.includes(",")) {
+        const partes = inputValor.split(",");
+        const indice = parseInt(partes[0]);
+        const novoValor = partes[1].trim();
+        
+        if (!isNaN(indice) && indice >= 0 && indice < itens.length) {
+            itens[indice].textContent = novoValor;
+        }
+    } 
+}
+
+// 6. FUNCTION CALCULAR TROCO exercicios.js
+function calcularTroco() {
+    let valorItem = parseFloat(document.getElementById("input-valor-item").value);
+    let pagamento = parseFloat(document.getElementById("input-pagamento").value);
+
+    if (isNaN(valorItem) || isNaN(pagamento) || valorItem < 0 || pagamento < 0) {
+        document.getElementById("resultado-troco").innerText = "Por favor, insira valores válidos e não negativos.";
+        return;
+    }
+
+    let troco = pagamento - valorItem;
+
+    if (troco < 0) {
+        document.getElementById("resultado-troco").innerText = "Pagamento insuficiente.";
+    } else {
+        document.getElementById("resultado-troco").innerText = "Troco: R$ " + troco.toFixed(2);
     }
 }

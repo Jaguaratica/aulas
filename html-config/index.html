@@ -68,27 +68,9 @@
                                 - Mostra "status: null" no console<br><br>
                                 Input → Verifica → Atualiza título<br><br>
                                 </p>
-                            </p>
                             <input type="text" id="titulo-input" class="inputs" placeholder="titulo"></input>
                             <button class="button-style1" onclick="alterarTitulo()">Alterar</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <!-- FUNCTION ADICIONAR LISTA-->
-                            <h3>function adicionarLista()</h3>
-                            <p>Pega texto do input<br>
-                            Se não vazio:<br>
-                            1. Cria item de lista<br>
-                            2. Adiciona à lista<br>
-                            3. Limpa o campo<br>
-                            Se não existir:<br>
-                            - Mostra "status: null" no console<br><br>
-                            Input → Valida → Adiciona → Limpa<br><br>
-                            </p>
-                            <input type="text" id="item-input" class="inputs" placeholder="item"></input>
-                            <button class="button-style1" onclick="adicionarLista()">Adicionar</button>
-                            <ul id="lista-itens"></ul>
+                            <p id="titulo-null"></p>
                         </div>
                     </div>
                     <div class="card">
@@ -109,6 +91,26 @@
                             <input type="text" id="frutas-input" class="inputs" placeholder="item"></input>
                             <button class="button-style1" onclick="descobrirIndice()">Adicionar</button>
                             <p id="resultado"></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <!-- FUNCTION ADICIONAR LISTA-->
+                            <h3>function adicionarLista()</h3>
+                            <p>Pega texto do input<br>
+                            Se não vazio:<br>
+                            1. Cria item de lista<br>
+                            2. Adiciona à lista<br>
+                            3. Limpa o campo<br>
+                            Se não existir:<br>
+                            - Mostra "status: null" no console<br><br>
+                            Input → Valida → Adiciona → Limpa<br><br>
+                            </p>
+                            <input type="text" id="item-input" class="inputs" placeholder="item"></input>
+                            <button class="button-style1" onclick="adicionarLista()">Adicionar</button><br><br>
+                            <ul id="lista-itens"></ul>
+                            </p>
+
                         </div>
                     </div>
                 </div>
@@ -137,20 +139,53 @@
                             <input type="text" id="nota-2" class="inputs" placeholder="2° nota"></input>
                             <input type="text" id="nota-3" class="inputs" placeholder="3° nota"></input><br><br>
                             <button class="button-style1" onclick="calcularNota()">Calcular</button>
-                            <p id="resultado-calculo"></p> 
+                            <p id="resultado-calculo"></p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <h3>function calcula()</h3>
-                            <p>
+                            <h3>function alterarItemLista()</h3>
+                            <p>Pega o valor do input<br>
+                            1. Verifica se contém vírgula<br>
+                            2. Separa em índice e novo valor<br>
+                            3. Converte o índice para número<br>
+                            4. Verifica se o índice é válido<br>
+                            5. Altera o item correspondente na lista<br><br>
+
+                            Input → Verifica → Separa → Converte → Valida → Altera<br><br>
+
+                            Digite no formato "índice,novoValor" e clique em "Alterar":<br>
+                            Exemplo: "2,Óleo" - altera o terceiro item para "Óleo"<br><br>
                             </p>
+                            <input type="text" id="input-lista" class="inputs" placeholder="item"></input>
+                            <button class="button-style1" onclick="alterarItemLista()">alterar</button><br><br>
+                            <ul id="lista">
+                                <li>Arroz</li>
+                                <li>Feijão</li>
+                                <li>Macarrão</li>
+                                <li>Azeite</li>
+                                <li>Sal</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <h3>XXXX</h3>
-                            <p>XXXX</p>
+                            <h3>function calcularTroco()</h3>
+                            <p>1. Pega valor do item
+                            2. Pega valor do pagamento
+                            3. Se algum valor não for numérico:
+                                - Mostra mensagem de erro
+                                - Retorna
+                            4. Calcula troco = pagamento - valorItem
+                            5. Se troco for menos que 0:
+                                - Mostra "Pagamento insuficiente"
+                            Senão:
+                                - Mostra "Troco: R$ X.XX"
+                            </p><br>
+                            <input type="text" id="input-valor-item" class="inputs" placeholder="valor do produto"></input>
+                            <input type="text" id="input-pagamento" class="inputs" placeholder="pagamento"></input><br><br>
+                            <button class="button-style1" onclick="calcularTroco()">calcular</button><br><br>
+                            <p id="resultado-troco"></p>
                         </div>
                     </div>
                 </div>
@@ -168,15 +203,15 @@
                 <form style="max-width: 600px; margin: 40px auto;">
                     <div style="margin-bottom: 20px;">
                         <label for="name" style="display: block; margin-bottom: 5px;">Nome</label>
-                        <input type="text" id="name" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: var(--border-radius);">
+                        <input type="text" id="name" style="width: 100%; padding: 10px; border: 1px solid #c4c4c4; border-radius: var(--border-radius);">
                     </div>
                     <div style="margin-bottom: 20px;">
                         <label for="email" style="display: block; margin-bottom: 5px;">Email</label>
-                        <input type="email" id="email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: var(--border-radius);">
+                        <input type="email" id="email" style="width: 100%; padding: 10px; border: 1px solid #c4c4c4; border-radius: var(--border-radius);">
                     </div>
                     <div style="margin-bottom: 20px;">
                         <label for="message" style="display: block; margin-bottom: 5px;">Mensagem</label>
-                        <textarea id="message" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: var(--border-radius);"></textarea>
+                        <textarea id="message" rows="5" style="width: 100%; padding: 10px; border: 1px solid #c4c4c4; border-radius: var(--border-radius);"></textarea>
                     </div>
                     <button type="submit" class="button-style2" >Enviar Mensagem</button>
                 </form>
@@ -190,7 +225,7 @@
             <p>&copy; 2025 Jaguaratica's. Todos os direito reservados.</p>
         </div>
     </footer>
-    
+
     <script src="../functions/funcoes.js"></script>
 </body>
 </html>

@@ -1,23 +1,3 @@
-// Array/ Vetor
-function descobrirIndice() {
-        frutas = ["Maçã", "Banana", "Laranja", "Uva", "Morango"];
-        const inputDasFrutas = document.getElementById("frutas-input");
-        const frutaDigitada = inputDasFrutas.value.trim();
-        
-        const indice = frutas.findIndex(fruta => 
-        fruta.toLowerCase() === frutaDigitada.toLowerCase()
-        )
-
-        const resultadoElemento = document.getElementById("resultado");
-
-        if (indice !== -1) {
-        resultadoElemento.textContent = `Índice encontrado: ${indice}`;
-    } else {
-        resultadoElemento.textContent = "Fruta não encontrada!";
-    }
-        return indice;
-}
-
 /*
 frutas = ["Maçã", "Banana", "Laranja", "Uva", "Morango"]
 frutaInicial = 'Banana'

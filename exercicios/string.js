@@ -1,5 +1,5 @@
-/*
-
+// NO FUNCTION ->
+// --------------------------------------------------------
 // Exercício 1: Saudação Personalizada
 // Conceitos: Variáveis, prompt, alert, concatenação simples.
 // Use prompt para perguntar o nome do usuário.
@@ -7,9 +7,12 @@
 // Use alert para mostrar a mensagem: "Olá, [nome do usuário]! Bem-vindo(a)!".
 // --------------------------------------------------------
 
+/*
 const nome = prompt("Seu nome: "); // Guardando o nome em variável
 console.log(`Olá, ${nome}! Bem-vindo(a)!`); // Mensagem de boas vindas
+*/
 
+// NO FUNCTION ->
 // --------------------------------------------------------
 // Exercício 2: Informações da Frase
 // Conceitos: .length para obter o tamanho total, método .toUpperCase() para a string inteira.
@@ -19,13 +22,16 @@ console.log(`Olá, ${nome}! Bem-vindo(a)!`); // Mensagem de boas vindas
 // Mostre no console a frase inteira em letras maiúsculas (usando .toUpperCase()).
 // --------------------------------------------------------
 
+/*
 let frase = prompt("Digite uma frase: "); // Guardando frase em variável
 
 // informações no console ->
 console.log(`Sua frase: ${frase}.`) 
 console.log(`Número total de caracteres: ${frase.length}.`);
 console.log(`Frase em maiúsculo: ${frase.toUpperCase()}.`);
+*/
 
+// NO FUNCTION ->
 // --------------------------------------------------------
 // Exercício 3: Calculadora Simples
 // Conceitos: parseFloat, operadores matemáticos (+, -, *, /), concatenação.
@@ -34,6 +40,7 @@ console.log(`Frase em maiúsculo: ${frase.toUpperCase()}.`);
 // Exiba os quatro resultados no console com mensagens claras, como: "A soma de 10 e 5 é: 15".
 // --------------------------------------------------------
 
+/*
 let primeiro = parseFloat(prompt("primeiro número: ")); // Guardando n°1 em variável
 let segundo = parseFloat(prompt("segundo número: ")); // Guardando n°2 em variável
 
@@ -44,7 +51,9 @@ const mult = primeiro * segundo;
 const div = primeiro / segundo;
 
 console.log(`Soma: ${soma}; Subtração: ${sub}; Multiplicação: ${mult}; Divisão: ${div}.`); // Informações no console
+*/
 
+// NO FUNCTION
 // --------------------------------------------------------
 // Exercício 4: Verificador de Idade
 // Conceitos: if/else, operadores de comparação (>=).
@@ -54,6 +63,7 @@ console.log(`Soma: ${soma}; Subtração: ${sub}; Multiplicação: ${mult}; Divis
 // Caso contrário, exiba: "Você é menor de idade.".
 // --------------------------------------------------------
 
+/*
 let idade = parseFloat(prompt("Escreva sua idade: ")); // Guardando idade em variável
 
 // Verificar se é maior de idade ->
@@ -62,7 +72,9 @@ if (idade > 18) {
 } else {
     console.log("Você é menor de idade.");
 }
+/*
 
+// 4. FUNCTION ON ->
 // --------------------------------------------------------
 // Exercício 5: Calculadora de Média Escolar
 // Conceitos: Cálculos, if/else if/else.
@@ -74,18 +86,7 @@ if (idade > 18) {
 // "Aprovado" (se a média for maior ou igual a 7).
 // --------------------------------------------------------
 
-// Guardando notas em variáveis
-
-// Prox function
-// 1. Criar três espaços de input no HTML
-// 2. getElementById dos inputs
-// 3. Criar variavel calculo média - inputs
-// 4. Criar os ifs (associar ao getElementById)
-
-*/
-
-// --------------------->
-
+/*
 function calcularNota() {
     const nota1 = parseFloat(document.getElementById("nota-1").value);
     const nota2 = parseFloat(document.getElementById("nota-2").value);
@@ -107,3 +108,6 @@ function calcularNota() {
         resultadoElemento.textContent = "Sua nota final é: " + media.toFixed(2) + " - Recuperação";
     }
 }
+*/
+
+// --------------------------------------------------------
