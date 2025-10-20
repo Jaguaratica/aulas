@@ -75,21 +75,19 @@ function calcularNota() {
 }
 
 // 5. FUNCTION ALTERAR ITEM DA LISTA arrays.js
-function alterarItemLista() { 
-    const inputValor = document.getElementById("input-lista").value;
-    const listaElement = document.getElementById("lista");
-    const itens = listaElement.getElementsByTagName("li");
+function alterarItemLista(botao) {
+    const itemLi = botao.closest('li');
+    const input = itemLi.querySelector('input');
+    const novoNome = input.value.trim();
     
-    if (inputValor.includes(",")) {
-        const partes = inputValor.split(",");
-        const indice = parseInt(partes[0]);
-        const novoValor = partes[1].trim();
-        
-        if (!isNaN(indice) && indice >= 0 && indice < itens.length) {
-            itens[indice].textContent = novoValor;
-        }
-    } 
+    if (novoNome !== '') {
+        // Atualiza o texto do item da lista (primeiro child node do li)
+        itemLi.firstChild.textContent = novoNome;
+        // Limpa o input
+        input.value = '';
+    }
 }
+
 
 // 6. FUNCTION CALCULAR TROCO exercicios.js
 function calcularTroco() {
